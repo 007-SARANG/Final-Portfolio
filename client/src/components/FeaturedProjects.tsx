@@ -12,8 +12,8 @@ const projects = [
     categoryIcon: "🎮",
     categoryColor: "var(--purple-primary)",
     tech: ["Python", "OpenCV", "Game Development"],
-    liveDemo: "#",
-    github: "#"
+    liveDemo: "https://github.com/007-SARANG/gesture-pong-game",
+    github: "https://github.com/007-SARANG/gesture-pong-game"
   },
   {
     id: 2,
@@ -24,8 +24,8 @@ const projects = [
     categoryIcon: "🤖",
     categoryColor: "var(--blue-primary)",
     tech: ["React", "JavaScript", "Logic Modules"],
-    liveDemo: "#",
-    github: "#"
+    liveDemo: "https://sarangbot.netlify.app",
+    github: "https://github.com/007-SARANG/sarangbot"
   },
   {
     id: 3,
@@ -36,8 +36,8 @@ const projects = [
     categoryIcon: "💻",
     categoryColor: "var(--emerald-accent)",
     tech: ["React", "Tailwind CSS", "Framer Motion"],
-    liveDemo: "#",
-    github: "#"
+    liveDemo: "https://sarangos.vercel.app",
+    github: "https://github.com/007-SARANG/sarangos"
   },
   {
     id: 4,
@@ -48,8 +48,8 @@ const projects = [
     categoryIcon: "💉",
     categoryColor: "var(--amber-accent)",
     tech: ["Python", "SVM", "scikit-learn"],
-    liveDemo: "#",
-    github: "#"
+    liveDemo: "https://diabetes-predictor-sarang.streamlit.app",
+    github: "https://github.com/007-SARANG/diabetes-prediction"
   },
   {
     id: 5,
@@ -60,8 +60,8 @@ const projects = [
     categoryIcon: "🎵",
     categoryColor: "var(--purple-primary)",
     tech: ["JavaScript", "Frontend Logic", "Music"],
-    liveDemo: "#",
-    github: "#"
+    liveDemo: "https://mood-music-sarang.netlify.app",
+    github: "https://github.com/007-SARANG/mood-music-recommender"
   },
   {
     id: 6,
@@ -72,8 +72,8 @@ const projects = [
     categoryIcon: "📊",
     categoryColor: "var(--blue-primary)",
     tech: ["Python", "Data Analysis", "Text Processing"],
-    liveDemo: "#",
-    github: "#"
+    liveDemo: "https://github.com/007-SARANG/whatsapp-analyzer",
+    github: "https://github.com/007-SARANG/whatsapp-analyzer"
   }
 ];
 
