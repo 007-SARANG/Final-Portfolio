@@ -59,20 +59,23 @@ export default function ContactSection() {
     {
       icon: "✉️",
       label: "Email",
-      value: "your.email@example.com",
-      color: "var(--purple-primary)"
+      value: "sarang@thapar.edu",
+      color: "var(--purple-primary)",
+      href: "mailto:sarang@thapar.edu"
     },
     {
       icon: "💼",
       label: "LinkedIn",
-      value: "linkedin.com/in/yourprofile",
-      color: "var(--blue-primary)"
+      value: "Connect with me",
+      color: "var(--blue-primary)",
+      href: "https://linkedin.com/in/sarang-aiml"
     },
     {
       icon: "💻",
       label: "GitHub",
-      value: "github.com/yourprofile",
-      color: "var(--emerald-accent)"
+      value: "View my code",
+      color: "var(--emerald-accent)",
+      href: "https://github.com/sarang-dev"
     }
   ];
 
@@ -104,23 +107,26 @@ export default function ContactSection() {
             <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
             <div className="space-y-6">
               {contactInfo.map((info, index) => (
-                <motion.div
+                <motion.a
                   key={info.label}
-                  className="flex items-center gap-4"
+                  href={info.href}
+                  target={info.href.startsWith('http') ? '_blank' : '_self'}
+                  rel={info.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                  className="flex items-center gap-4 group transition-colors duration-300 hover:text-white"
                   whileHover={{ x: 10 }}
                   transition={{ duration: 0.3 }}
                 >
                   <div 
-                    className="w-12 h-12 rounded-lg flex items-center justify-center"
+                    className="w-12 h-12 rounded-lg flex items-center justify-center transition-all duration-300 group-hover:scale-110"
                     style={{ backgroundColor: `${info.color}20` }}
                   >
                     <span className="text-xl">{info.icon}</span>
                   </div>
                   <div>
-                    <div className="font-semibold">{info.label}</div>
-                    <div className="text-gray-400">{info.value}</div>
+                    <div className="font-semibold group-hover:text-white">{info.label}</div>
+                    <div className="text-gray-400 group-hover:text-gray-300">{info.value}</div>
                   </div>
-                </motion.div>
+                </motion.a>
               ))}
             </div>
           </motion.div>
