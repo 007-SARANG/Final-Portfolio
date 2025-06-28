@@ -59,23 +59,23 @@ export default function ContactSection() {
     {
       icon: "✉️",
       label: "Email",
-      value: "sarang@thapar.edu",
+      value: "sarangarora@engineer.com",
       color: "var(--purple-primary)",
-      href: "mailto:sarang@thapar.edu"
+      href: "mailto:sarangarora@engineer.com"
     },
     {
       icon: "💼",
       label: "LinkedIn",
       value: "Connect with me",
       color: "var(--blue-primary)",
-      href: "https://linkedin.com/in/sarang-aiml"
+      href: "https://www.linkedin.com/in/sarang-arora"
     },
     {
       icon: "💻",
       label: "GitHub",
       value: "View my code",
       color: "var(--emerald-accent)",
-      href: "https://github.com/sarang-dev"
+      href: "https://github.com/007-SARANG"
     }
   ];
 

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { fadeInUp, slideInLeft, slideInRight } from "@/lib/animations";
+import profileImage from "@assets/sarang_1751113626751.jpg";
 
 export default function AboutSection() {
   const { ref, isVisible } = useScrollAnimation();
@@ -68,8 +69,8 @@ export default function AboutSection() {
             >
               <div className="absolute inset-0 gradient-bg rounded-2xl blur-xl opacity-30" />
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800" 
-                alt="Young developer working on AI projects"
+                src={profileImage} 
+                alt="Sarang Arora - AIML Developer"
                 className="relative w-full max-w-md mx-auto rounded-2xl shadow-2xl glow-effect"
               />
             </motion.div>
