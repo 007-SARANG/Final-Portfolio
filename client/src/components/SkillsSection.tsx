@@ -4,43 +4,43 @@ import { fadeInUp, staggerContainer } from "@/lib/animations";
 
 const skillCategories = [
   {
-    title: "AI & Machine Learning",
+    title: "Languages & Core",
     color: "var(--purple-primary)",
     skills: [
       { name: "Python", icon: "🐍", level: "Advanced" },
-      { name: "PyTorch", icon: "🔥", level: "Advanced" },
-      { name: "TensorFlow", icon: "📊", level: "Intermediate" },
-      { name: "Computer Vision", icon: "👁️", level: "Intermediate" }
+      { name: "JavaScript", icon: "⚡", level: "Advanced" },
+      { name: "C/C++", icon: "⚙️", level: "Intermediate" },
+      { name: "HTML/CSS", icon: "🌐", level: "Advanced" }
     ]
   },
   {
-    title: "Web Development",
+    title: "AI & Machine Learning",
     color: "var(--blue-primary)",
     skills: [
-      { name: "JavaScript", icon: "⚡", level: "Advanced" },
-      { name: "React", icon: "⚛️", level: "Advanced" },
-      { name: "Node.js", icon: "🟢", level: "Intermediate" },
-      { name: "MongoDB", icon: "🍃", level: "Intermediate" }
+      { name: "OpenCV", icon: "👁️", level: "Advanced" },
+      { name: "scikit-learn", icon: "🤖", level: "Intermediate" },
+      { name: "pandas", icon: "🐼", level: "Intermediate" },
+      { name: "numpy", icon: "🔢", level: "Intermediate" }
     ]
   },
   {
-    title: "Creative Tools",
+    title: "Frameworks & Libraries",
     color: "var(--emerald-accent)",
     skills: [
-      { name: "Three.js", icon: "🎮", level: "Intermediate" },
-      { name: "WebGL", icon: "🎨", level: "Beginner" },
-      { name: "OpenCV", icon: "📹", level: "Intermediate" },
-      { name: "p5.js", icon: "🎵", level: "Intermediate" }
+      { name: "ReactJS", icon: "⚛️", level: "Advanced" },
+      { name: "Flask", icon: "🌶️", level: "Learning" },
+      { name: "Node.js", icon: "🟢", level: "Intermediate" },
+      { name: "Framer Motion", icon: "🎭", level: "Intermediate" }
     ]
   },
   {
     title: "Tools & Platforms",
     color: "var(--amber-accent)",
     skills: [
-      { name: "Git", icon: "📝", level: "Advanced" },
-      { name: "Docker", icon: "🐳", level: "Beginner" },
-      { name: "AWS", icon: "☁️", level: "Beginner" },
-      { name: "VS Code", icon: "💻", level: "Expert" }
+      { name: "Git & GitHub", icon: "📝", level: "Advanced" },
+      { name: "Tailwind CSS", icon: "🎨", level: "Advanced" },
+      { name: "Netlify/Vercel", icon: "🚀", level: "Intermediate" },
+      { name: "Jupyter/Colab", icon: "📊", level: "Intermediate" }
     ]
   }
 ];

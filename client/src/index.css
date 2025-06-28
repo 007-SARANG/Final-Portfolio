@@ -221,6 +221,41 @@
   }
 }
 
+@keyframes grid-move {
+  0% { 
+    transform: translate(0, 0); 
+  }
+  100% { 
+    transform: translate(50px, 50px); 
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { 
+    box-shadow: 0 0 20px hsla(263, 85%, 68%, 0.3);
+  }
+  50% { 
+    box-shadow: 0 0 40px hsla(263, 85%, 68%, 0.6);
+  }
+}
+
+@keyframes line-pulse {
+  0%, 100% { 
+    opacity: 0.1;
+    transform: scaleX(0.8);
+  }
+  50% { 
+    opacity: 0.4;
+    transform: scaleX(1.2);
+  }
+}
+
+/* Enhanced particle effects */
+.particle-line {
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
