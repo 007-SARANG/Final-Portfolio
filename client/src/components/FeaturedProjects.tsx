@@ -12,8 +12,7 @@ const projects = [
     categoryIcon: "🎮",
     categoryColor: "var(--purple-primary)",
     tech: ["Python", "OpenCV", "Game Development"],
-    liveDemo: "https://github.com/007-SARANG/gesture-pong-game",
-    github: "https://github.com/007-SARANG/gesture-pong-game"
+    github: "https://github.com/007-SARANG/gesture_pong"
   },
   {
     id: 2,
@@ -24,8 +23,7 @@ const projects = [
     categoryIcon: "🤖",
     categoryColor: "var(--blue-primary)",
     tech: ["React", "JavaScript", "Logic Modules"],
-    liveDemo: "https://sarangbot.netlify.app",
-    github: "https://github.com/007-SARANG/sarangbot"
+    github: "https://github.com/007-SARANG/chatbot"
   },
   {
     id: 3,
@@ -36,8 +34,7 @@ const projects = [
     categoryIcon: "💻",
     categoryColor: "var(--emerald-accent)",
     tech: ["React", "Tailwind CSS", "Framer Motion"],
-    liveDemo: "https://sarangos.vercel.app",
-    github: "https://github.com/007-SARANG/sarangos"
+    github: "#"
   },
   {
     id: 4,
@@ -48,8 +45,7 @@ const projects = [
     categoryIcon: "💉",
     categoryColor: "var(--amber-accent)",
     tech: ["Python", "SVM", "scikit-learn"],
-    liveDemo: "https://diabetes-predictor-sarang.streamlit.app",
-    github: "https://github.com/007-SARANG/diabetes-prediction"
+    github: "https://github.com/007-SARANG/Diabetes_Prediction_Bot"
   },
   {
     id: 5,
@@ -60,8 +56,7 @@ const projects = [
     categoryIcon: "🎵",
     categoryColor: "var(--purple-primary)",
     tech: ["JavaScript", "Frontend Logic", "Music"],
-    liveDemo: "https://mood-music-sarang.netlify.app",
-    github: "https://github.com/007-SARANG/mood-music-recommender"
+    github: "https://github.com/007-SARANG/Mood-Song-Recommend"
   },
   {
     id: 6,
@@ -72,8 +67,7 @@ const projects = [
     categoryIcon: "📊",
     categoryColor: "var(--blue-primary)",
     tech: ["Python", "Data Analysis", "Text Processing"],
-    liveDemo: "https://github.com/007-SARANG/whatsapp-analyzer",
-    github: "https://github.com/007-SARANG/whatsapp-analyzer"
+    github: "https://github.com/007-SARANG/Whatsapp-Summarizer"
   }
 ];
 
