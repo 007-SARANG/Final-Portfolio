@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { fadeInUp, staggerContainer } from "@/lib/animations";
+import Skills3D from "./Skills3D";
 
 const skillCategories = [
   {
@@ -64,6 +65,10 @@ export default function SkillsSection() {
           <p className="text-xl text-gray-300">
             The tools and technologies I use to bring ideas to life
           </p>
+        </motion.div>
+
+        <motion.div variants={fadeInUp} className="mb-12 border border-gray-800 rounded-2xl bg-black/20 overflow-hidden">
+             <Skills3D />
         </motion.div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">

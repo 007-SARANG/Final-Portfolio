@@ -5,7 +5,7 @@ import FeaturedProjects from "@/components/FeaturedProjects";
 import AboutSection from "@/components/AboutSection";
 import SkillsSection from "@/components/SkillsSection";
 import ContactSection from "@/components/ContactSection";
-import ParticleBackground from "@/components/ParticleBackground";
+import ThreeBackground from "@/components/ThreeBackground";
 
 export default function Portfolio() {
   useEffect(() => {
@@ -26,7 +26,7 @@ export default function Portfolio() {
 
   return (
     <div className="relative bg-[var(--dark-primary)] text-white min-h-screen">
-      <ParticleBackground />
+      <ThreeBackground />
       <Navigation />
       <main>
         <HeroSection />
