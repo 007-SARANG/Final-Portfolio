@@ -1,7 +1,10 @@
 [build]
-base = "client"
-publish = "dist"
-command = "npm install && npm run build"
+base = "."
+publish = "client/dist"
+command = "npm install --legacy-peer-deps && npm run build"
+
+[build.environment]
+  NPM_FLAGS = "--legacy-peer-deps"
 
 [[redirects]]
   from = "/*"

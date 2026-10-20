@@ -1,47 +1,43 @@
-import { useEffect } from "react";
-import Navigation from "@/components/Navigation";
-import HeroSection from "@/components/HeroSection";
-import FeaturedProjects from "@/components/FeaturedProjects";
-import AboutSection from "@/components/AboutSection";
-import SkillsSection from "@/components/SkillsSection";
-import ContactSection from "@/components/ContactSection";
-import ParticleBackground from "@/components/ParticleBackground";
+import { Canvas } from '@react-three/fiber';
+import { ScrollControls } from '@react-three/drei';
+import { Suspense, useEffect } from 'react';
+import Experience from '@/components/Experience';
+import { Overlay } from '@/components/Overlay';
+import Navigation from '@/components/Navigation';
 
 export default function Portfolio() {
   useEffect(() => {
     document.title = "Portfolio - AIML Developer & Creative Builder";
     
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 
-        '18-year-old B.Tech AIML student at Thapar University. Building the future with AI, machine learning, and creative technology. Explore my projects and innovations.'
-      );
-    } else {
-      const meta = document.createElement('meta');
-      meta.name = 'description';
-      meta.content = '18-year-old B.Tech AIML student at Thapar University. Building the future with AI, machine learning, and creative technology. Explore my projects and innovations.';
-      document.head.appendChild(meta);
-    }
+    // Add meta tags...
   }, []);
 
   return (
-    <div className="relative bg-[var(--dark-primary)] text-white min-h-screen">
-      <ParticleBackground />
+    <div className="relative bg-[var(--dark-primary)] text-white h-screen w-full overflow-hidden">
       <Navigation />
-      <main>
-        <HeroSection />
-        <FeaturedProjects />
-        <AboutSection />
-        <SkillsSection />
-        <ContactSection />
-      </main>
-      <footer className="py-8 px-6 border-t border-gray-800">
-        <div className="max-w-7xl mx-auto text-center">
-          <p className="text-gray-400">
-            © 2024 AIML Developer Portfolio. Built with passion and lots of caffeine ☕
-          </p>
-        </div>
-      </footer>
+
+      {/*
+        Canvas needs to fill the screen.
+        ScrollControls will handle the scrolling behavior.
+      */}
+      <Canvas
+        camera={{
+            position: [0, 0, 5],
+            fov: 30
+        }}
+      >
+         <Suspense fallback={null}>
+            <ScrollControls pages={4} damping={0.25}>
+                <Experience />
+                <Overlay />
+            </ScrollControls>
+         </Suspense>
+      </Canvas>
+
+      {/*
+         Loader?
+         <Loader />
+      */}
     </div>
   );
 }
